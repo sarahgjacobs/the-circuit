@@ -11,3 +11,70 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.circle__box {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.circle__wrapper {
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+.circle__wrapper--right {
+  right: 0;
+}
+
+.circle__wrapper--left {
+  left: 0;
+}
+
+.circle__whole {
+  width: 160px;
+  height: 160px;
+  border: 20px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+.circle__right {
+  border-top: 20px solid rgb(0, 0, 0);
+  border-right: 20px solid rgb(0, 0, 0);
+  right: 1px;
+  animation: circleLeft 2.5s linear forwards;
+}
+
+.circle__left {
+  border-bottom: 20px solid rgb(0, 0, 0);
+  border-left: 20px solid rgb(0, 0, 0);
+  left: 1px;
+  animation: circleRight 2.5s linear forwards;
+}
+
+@keyframes circleRight {
+  0% {
+    transform: rotate(45deg);
+  }
+  50%,
+  100% {
+    transform: rotate(-135deg);
+  }
+}
+
+@keyframes circleLeft {
+  0%,
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(-135deg);
+  }
+}
