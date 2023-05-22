@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000000; /* Black background */
+  color: #00FFFF; /* Electric blue text color */
+  font-family: Arial, sans-serif;
 }
 
 code {
@@ -77,4 +80,28 @@ code {
   100% {
     -webkit-transform: rotate(-135deg);
   }
+}
+
+
+h1 {
+  color: #006666; /* Dark electric blue heading color */
+}
+
+a {
+  color: #0000FF; /* Deep electric blue link color */
+}
+
+.button {
+  background-color: #33CCFF; /* Electric blue highlight button background color */
+  color: #000000; /* Black button text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #000000; /* Black button background color on hover */
+  color: #00FFFF; /* Electric blue text color on hover */
 }
