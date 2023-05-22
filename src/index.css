@@ -8,12 +8,14 @@ body {
   background-color: #000000; /* Black background */
   color: #00FFFF; /* Electric blue text color */
   font-family: Arial, sans-serif;
+  overflow: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 
 .circle__box {
   width: 200px;
@@ -45,19 +47,19 @@ code {
   border-radius: 50%;
   position: absolute;
   top: 0;
-  transform: rotate(-135deg);
+  transform: rotate(135deg);
 }
 
 .circle__right {
-  border-top: 20px solid rgb(0, 0, 0);
-  border-right: 20px solid rgb(0, 0, 0);
+  border-top: 20px solid #fff;
+  border-right: 20px solid #fff;
   right: 1px;
   animation: circleLeft 2.5s linear forwards;
 }
 
 .circle__left {
-  border-bottom: 20px solid rgb(0, 0, 0);
-  border-left: 20px solid rgb(0, 0, 0);
+  border-bottom: 20px solid #fff;
+  border-left: 20px solid #fff;
   left: 1px;
   animation: circleRight 2.5s linear forwards;
 }
@@ -99,9 +101,38 @@ a {
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 2rem; /* Adjust the font size to make the button larger */
+  padding: 20px 40px; /* Adjust the padding to increase the button size */
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%; 
 }
 
 .button:hover {
-  background-color: #000000; /* Black button background color on hover */
-  color: #00FFFF; /* Electric blue text color on hover */
+  background-color: #00FFFF; 
+  color: #012875; 
+  border-radius: 20px;
+}
+
+.edge-gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px; /* Adjust the height of the gradient lines */
+  background-image: linear-gradient(to right, #0040ef, #33CCFF, #0000FF); /* Gradient from transparent to black */
+  pointer-events: none; /* Ignore mouse events on the gradient lines */
+}
+
+/* Create a top gradient line */
+.top-gradient {
+  top: 0;
+}
+
+/* Create a bottom gradient line */
+.bottom-gradient {
+  bottom: 0;
 }
