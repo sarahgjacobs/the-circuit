@@ -1,5 +1,7 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 function Home() {
   return (
@@ -16,7 +18,8 @@ function Home() {
   </div>
 </div>
 <div class="container">
-<button class="button">Enter The Circuit</button><br></br>
+<Link to="/characters" class="button">Enter The Circuit</Link>
+        <br />
 <a href="https://github.com/sarahgjacobs">Github</a>
 </div>
     </section>
