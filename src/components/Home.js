@@ -16,7 +16,7 @@ function Home() {
   </div>
 </div>
 <div class="container">
-<button class="button">Enter The Circuit</button>
+<button class="button">Enter The Circuit</button><br></br>
 <a href="https://github.com/sarahgjacobs">Github</a>
 </div>
     </section>
