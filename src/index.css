@@ -16,6 +16,30 @@ code {
     monospace;
 }
 
+.navbar {
+  background-color: #000000;
+  padding: 20px;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: right;
+  margin: 0;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.nav-item a {
+  color: #E6FAF8;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.nav-item a:hover {
+  color: #FF0000;
+}
 
 .circle__box {
   width: 200px;
@@ -117,15 +141,7 @@ a {
   border-radius: 20px;
 }
 
-.edge-gradient {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 50px; /* Adjust the height of the gradient lines */
-  background-image: linear-gradient(to right, #0040ef, #33CCFF, #0000FF); /* Gradient from transparent to black */
-  pointer-events: none; /* Ignore mouse events on the gradient lines */
-}
+
 
 /* Create a top gradient line */
 .top-gradient {
