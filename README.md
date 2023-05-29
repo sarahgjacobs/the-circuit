@@ -16,7 +16,7 @@ Friends and family can now dive deep into the tech world of The Circuit, a sci-f
 ## Installation & Usage
 ![Screenshot of Portfolio Website](./assets/images/Screen%20Shot%202023-02-09%20at%209.22.03%20AM.png "Sarah Jacobs Portfolio")
 
-See [this link]() to view the page.
+See [this link](https://github.com/sarahgjacobs/the-circuit) to view the page.
 
 ## Contributions
 Sarah Jacobs
